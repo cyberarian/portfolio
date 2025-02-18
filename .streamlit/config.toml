@@ -1,0 +1,27 @@
+[theme]
+# Base colors
+primaryColor = "#0096c7"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#1a1a1a"
+textColor = "#fafafa"
+font = "sans-serif"
+base = "dark"
+
+[server]
+enableXsrfProtection = false
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+showSidebarNavigation = false
+
+[ui]
+hideSidebarNav = true
+
+[layout]
+# Reduce padding and gap between elements
+padding = "0.5rem"
+gap = "small"
