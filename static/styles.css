@@ -120,7 +120,9 @@ section[data-testid="stSidebar"] {
 div.block-container {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    max-width: 1200px;
+    max-width: 80%;  /* Using percentage */
+    /* OR */
+    /* max-width: 1400px; */  /* Using pixels */
     margin: 0 auto;
 }
 

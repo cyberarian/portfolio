@@ -75,14 +75,10 @@ def main():
             with tabs[4]: projects.show_projects_tab()
             with tabs[5]: contact.show_contact_tab()
             
-            # Footer with Font Awesome icons
+            # Simplified professional footer
             st.markdown('''
             <div style="text-align: center; margin-top: 30px; padding: 20px; border-top: 1px solid #333;">
-                <p>© 2025 ADNURI MOHAMIDI - All Rights Reserved</p>
-                <p style="font-size: 0.8em; color: #777;">
-                    <i class="fas fa-code"></i> with <i class="fas fa-heart" style="color: #ff4b4b;"></i> using 
-                    <i class="fas fa-stream"></i> Streamlit
-                </p>
+                <p style="color: #777; font-size: 0.9em;">© 2025 Adnuri Mohamidi</p>
             </div>
             ''', unsafe_allow_html=True)
 
