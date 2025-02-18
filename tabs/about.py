@@ -9,7 +9,10 @@ def show_about_tab():
     <p style="text-align: justify; line-height: 1.8; margin-bottom: 20px;">
         As an advocate of open-source software, I have built (or rather, remastered) two live-Linux distributions based on Puppy Linux and Ubuntu 10.04 LTS (Lucid Lynx). These distributions are packed with numerous library and information science (LIS) software applications.
     </p>
+    <p style="text-align: justify; line-height: 1.8; margin-bottom: 20px;">
+        I specialize in developing AI-powered chatbots and Retrieval-Augmented Generation (RAG) applications, combining my expertise in library science with modern AI technologies to create practical solutions for various domains.
+    </p>
     <p style="text-align: justify; line-height: 1.8;">
-        I'm developing a growing interest in Artificial Intelligence (AI) applications that enhance workplace efficiency and decision-making processes. Please refer to my projects on <a href="https://github.com/cyberarian" target="_blank" style="color: #0096c7;">GitHub</a> for examples of this work. See also my Projects page.
+        Please refer to my projects on <a href="https://github.com/cyberarian" target="_blank" style="color: #0096c7;">GitHub</a> for examples of this work. See also my <a href="#" onclick="document.querySelector('[data-testid=\'stHorizontalBlock\'] button[role=\'tab\']:nth-child(5)').click(); return false;" style="color: #0096c7; text-decoration: underline;">Projects</a> page.
     </p>
     ''', "about-me"), unsafe_allow_html=True)

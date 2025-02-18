@@ -6,10 +6,11 @@ def show_skills_tab():
     st.markdown(div_card('''<h3>Technical Skills</h3>''', "tech-skills-header"), unsafe_allow_html=True)
     
     tech_skills = {
+        "AI Development": {"RAG Applications": 85, "Chatbot Development": 85, "Prompt Engineering": 85, "AI Pair Programming": 85},
         "Programming Languages": {"Python": 25},
         "Web Development": {"HTML/CSS": 25, "Streamlit": 25},
         "Data Science": {"SQL": 25, "Pandas": 25},
-        "Tools & Methods": {"Git": 60, "GNU/Linux": 60, "Visual Studio Code": 60, "Prompt Engineering": 85, "AI Pair Programming": 85, "Online Researching": 85, "Writing": 85, "Touch/Blind Typing": 85},
+        "Tools & Methods": {"GNU/Linux": 65, "Git": 40, "Visual Studio Code": 60, "GitHub Copilot": 60, "Online Researching": 85, "Writing": 85, "Touch/Blind Typing": 85},
     }
     
     for category, skills in tech_skills.items():
