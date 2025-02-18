@@ -19,7 +19,7 @@ def show_experience_tab():
         },
         {
             "title": "Technical Manager",
-            "company": "CV Mucha Persada",
+            "company": '<a href="https://www.viva.co.id/berita/nasional/1438880-inovasi-muncul-di-spbu-ada-alat-pengisian-nitrogen-bak-atm" target="_blank" style="color: #0096c7;">CV Mucha Persada</a>',
             "duration": "May 2021 – Jun 2022",
             "description": '''
                 <p>Led project management team for launching three new outlets across West Kalimantan with responsibilities including:</p>
