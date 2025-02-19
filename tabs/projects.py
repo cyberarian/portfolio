@@ -8,7 +8,7 @@ def show_projects_tab():
             "title": "Degex",
             "url": "https://www.youtube.com/watch?v=3NV9O5n0VVk&t=48s",
             "description": '''
-                A comprehensive Ubuntu-based Live Linux distribution specifically crafted for library professionals. This remaster includes essential Library and Information Science (LIS) tools, with integrated Senayan Library Management System (SLiMS). Built to make Linux accessible and practical for librarians, emphasizing ease of use without requiring installation.
+                A comprehensive Ubuntu-based Live Linux distribution specifically crafted for library professionals. This remastered edition includes over 25 essential tools for Library and Information Science (LIS), seamlessly integrated with the Senayan Library Management System (SLiMS). Built to make Linux accessible and practical for librarians, emphasizing ease of use without requiring installation.
                 <div style="margin-top: 10px;">
                     <details>
                         <summary style="color: #0096c7; cursor: pointer;">Webpage Coverage</summary>
@@ -27,7 +27,7 @@ def show_projects_tab():
             "title": "Puppylib",
             "url": "https://www.youtube.com/watch?v=7CBas1TRgRo",
             "description": '''
-                A lightweight Puppy Linux remaster optimized for library operations. This distribution packs essential library tools including SLiMS into a compact, resource-efficient system that runs smoothly on older hardware. Perfect for libraries with limited computing resources while maintaining full functionality.
+                A lightweight Puppy Linux remaster was optimized for library operations. This distribution packed essential library tools, including SLiMS, into a compact, resource-efficient system that ran smoothly on older hardware. Perfect for libraries with limited computing resources, it maintained full functionality without compromising performance.
                 <div style="margin-top: 10px;">
                     <details>
                         <summary style="color: #0096c7; cursor: pointer;">Webpage Coverage</summary>
@@ -82,11 +82,11 @@ def show_projects_tab():
             "link": "https://github.com/cyberarian/PawangData"
         },
         {
-            "title": "XperChat",
+            "title": "XpertChat",
             "url": "https://xpertchat.streamlit.app/",
             "description": "This chatbot is designed to represent four key domains: Computer Science, Library and Information Science, Archival Studies, and Data Science. My goal is to provide students and the general public with a tool that enhances their understanding and knowledge across these fields through a chat interface.",
             "skills": ["Python", "Streamlit", "Groq as the LLM provider"],
-            "link": "https://github.com/cyberarian/xperchat"
+            "link": "https://github.com/cyberarian/xpertchat"
         },
         {
             "title": "rt20maninjau",
