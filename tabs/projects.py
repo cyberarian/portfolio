@@ -101,6 +101,19 @@ def show_projects_tab():
             "description": "Introducing a chatbot that provides expert answers to your academic questions across various fields in food technology.",
             "skills": ["Python", "Streamlit", "Groq as the LLM provider"],
             "link": "https://github.com/cyberarian/foodxpert"
+        },
+        {
+            "title": "KYCPy",
+            "url": "https://knowyourcustomer.streamlit.app/",
+            "description": "The KYCPy platform represents a comprehensive solution for Know Your Customer (KYC) processes in banking institutions. Our AI-powered document verification system leverages Google's Gemini AI technology to provide advanced document processing capabilities.",
+            "skills": ["OCR", "Python", "Streamlit", "Gemini Flash"],
+            "link": "https://github.com/cyberarian/KYCPy"
+        },{
+            "title": "OCEARIN",
+            "url": "https://ocearin.streamlit.app/",
+            "description": "OCR with Vision Language Models (VLMs). With the integration of visual and linguistic intelligence, Visual-Linguistic Models (VLMs) can interpret text in its context more accurately, better understand the structure of tables and forms, and analyze visual elements to gain deeper insights.",
+            "skills": ["OCR", "Python", "Streamlit", "gemini-2.5-flash-preview-04-17", "Mistral-OCR"],
+            "link": "https://github.com/cyberarian/ocearin"
         }
     ]
     
