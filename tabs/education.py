@@ -36,6 +36,7 @@ def show_education_tab():
     st.markdown(div_card('''
     <h3>Certifications</h3>
     <ul style="list-style-type: disc; padding-left: 20px; margin-top: 8px;">
+        <li>Professional Document Control 101 - P3RI (May 2025)</li>
         <li>MikroTik Certified Network Associate (MTCNA)  - ID-Networkers (Sep 2022)</li>
         <li>Web Scraping  - Sekolah Stata (July 2022)</li>
         <li>OSINT Beginners course - Kapsuun Group (July 2022)</li>
