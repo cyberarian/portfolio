@@ -1,57 +1,29 @@
 import streamlit as st
+import pandas as pd
 from utils import div_card
 
 def show_projects_tab():
-    
     projects = [
         {
-            "title": "Degex",
-            "url": "https://www.youtube.com/watch?v=3NV9O5n0VVk&t=48s",
-            "description": '''
-                A comprehensive Ubuntu-based Live Linux distribution specifically crafted for library professionals. This remastered edition includes over 25 essential tools for Library and Information Science (LIS), seamlessly integrated with the Senayan Library Management System (SLiMS). Built to make Linux accessible and practical for librarians, emphasizing ease of use without requiring installation.
-                <div style="margin-top: 10px;">
-                    <details>
-                        <summary style="color: #0096c7; cursor: pointer;">Webpage Coverage</summary>
-                        <ul style="margin-top: 8px;">
-                            <li><a href="https://ugos.ugm.ac.id/2010/12/29/workshop-series-pelatihan-degex-dan-instalasi-linux-bagi-%20pustakawan-dan-umum/" target="_blank">UGM Workshop Coverage</a></li>
-                            <li><a href="http://ovanmulia.wordpress.com/2011/01/12/aplikasi-open-source-untuk-pustakawan/" target="_blank">Open Source Apps for Librarians</a></li>
-                            <li><a href="http://desawarna.blogspot.com/2011/02/ada-linux-degex-di-perpustakaan.html" target="_blank">Degex in Libraries</a></li>
-                            <li><a href="http://jogjalib.blogspot.com/2010/10/degex-linux-distribution-with-lis-apps.html" target="_blank">Jogjalib Review</a></li>
-                        </ul>
-                    </details>
-                </div>
-            ''',
-            "skills": ["GNU/Linux", "System Administration", "Library Systems"]
+            "title": "IDocspy",
+            "url": "https://s.id/idocspy",
+            "description": "an Intelligent Document Processing and Understanding. IDocspy is expected to contribute strategically as a complementary component that enhances the functionality of EDRMS.",
+            "skills": ["OCR", "Python", "Streamlit", "gemini-2.5-flash-preview-04-17", "Mistral-OCR"],
+            "link": "https://github.com/cyberarian/ocearin"
         },
         {
-            "title": "Puppylib",
-            "url": "https://www.youtube.com/watch?v=7CBas1TRgRo",
-            "description": '''
-                A lightweight Puppy Linux remaster was optimized for library operations. This distribution packed essential library tools, including SLiMS, into a compact, resource-efficient system that ran smoothly on older hardware. Perfect for libraries with limited computing resources, it maintained full functionality without compromising performance.
-                <div style="margin-top: 10px;">
-                    <details>
-                        <summary style="color: #0096c7; cursor: pointer;">Webpage Coverage</summary>
-                        <ul style="margin-top: 8px;">
-                            <li><a href="http://puppylinux.org/main/Puplet%20for%20special%20features.htm" target="_blank">PuppyLinux.org Feature</a></li>
-                            <li><a href="http://murga-linux.com/puppy/viewtopic.php?t=59919" target="_blank">Murga Linux Forum</a></li>
-                            <li><a href="http://obiblio.sourceforge.net/index.php/Main/Gallery" target="_blank">OpenBiblio Gallery</a></li>
-                            <li><a href="http://www.purwo.co/2009/07/puppylib-linux-livecd-rasa-perpustakaan.html" target="_blank">Purwo.co Review</a></li>
-                            <li><a href="https://gadgetboi.wordpress.com/2009/09/01/distro-linux-lokal-part-2-mengenal-lebih-jauh-" target="_blank">GadgetBoi Review</a></li>
-                            <li><a href="https://pkbmedukasi.wordpress.com/links/daftar-distro-linux-lokal/" target="_blank">Local Linux Distro List</a></li>
-                            <li><a href="https://archive.org/browse.php?field=subject&mediatype=software&collection=linux_distributio%20ns" target="_blank">Internet Archive</a></li>
-                            <li><a href="https://toko.baliwae.com/product_info.php?products_id=1632" target="_blank">Baliwae Store</a></li>
-                        </ul>
-                    </details>
-                </div>
-            ''',
-            "skills": ["GNU/Linux", "System Optimization", "System Administration", "Library Systems"]
+            "title": "OCEARIN",
+            "url": "https://s.id/ocearin",
+            "description": "OCR evaluator with Vision Language Models (VLMs). VLMs can interpret text in its context more accurately, better understand the structure of tables and forms, and analyze visual elements to gain deeper insights.",
+            "skills": ["OCR", "Python", "Streamlit", "gemini-2.5-flash-preview-04-17", "Mistral-OCR"],
+            "link": "https://github.com/cyberarian/ocearin"
         },
         {
-            "title": "Poetica",
-            "url": "https://poetica.streamlit.app/",
-            "description": "Generate beautiful poetry inspired by legendary Indonesian poets such as Sapardi Djoko Damono, Chairil Anwar, Wiji Thukul, WS Rendra, and Sutardji Calzoum Bachri. This app also supports analysis for aesthetic analysis, hermeneutic analysis, and literature analysis.",
-            "skills": ["Python", "Streamlit", "Groq as the LLM provider"],
-            "link": "https://github.com/cyberarian/poetica"
+            "title": "Arsipy",
+            "url": "https://arsipy.streamlit.app/",
+            "description": "AI-powered guide to archive manuals from trusted sources",
+            "skills": ["Retrieval-Augmented Generation (RAG)", "Python", "Streamlit", "OCR", "Groq as the LLM provider", "Google Gemini 2.0 Flash"],
+            "link": "https://github.com/cyberarian/arsipy"
         },
         {
             "title": "Ask Socrates",
@@ -59,13 +31,6 @@ def show_projects_tab():
             "description": "This app gives you the chance to engage in discussions with an AI representation of Socrates, the ancient Greek philosopher renowned for the Socratic Method—his technique of inquiry and questioning. My aim is to recreate his method, guiding you through philosophical questions and challenging your own perspectives.",
             "skills": ["Python", "Streamlit", "Meta-Llama-3.3-70b-versatile"],
             "link": "https://github.com/cyberarian/socrates"
-        },
-        {
-            "title": "Arsipy",
-            "url": "https://arsipy.streamlit.app/",
-            "description": "AI-powered guide to archive manuals and handwriting analysis",
-            "skills": ["Retrieval-Augmented Generation (RAG)", "Python", "Streamlit", "OCR", "Groq as the LLM provider", "Google Gemini 2.0 Flash"],
-            "link": "https://github.com/cyberarian/arsipy"
         },
         {
             "title": "FactChecker_ID",
@@ -80,6 +45,27 @@ def show_projects_tab():
             "description": "a Streamlit-based tool designed for data wrangling and visualization. Aimed at data professionals and enthusiasts, this app provides a seamless interface for handling and transforming datasets, making complex data tasks more manageable. Whether you're cleaning, transforming, or visualizing data, PawangData simplifies the process with intuitive tools and customizable options.",
             "skills": ["Python", "Streamlit", "Pandas", "Groq as the LLM provider", "Google Gemini 2.0 Flash"],
             "link": "https://github.com/cyberarian/PawangData"
+        },
+        {
+            "title": "Degex",
+            "url": "https://www.youtube.com/watch?v=3NV9O5n0VVk&t=48s",
+            "description": '''A comprehensive Ubuntu-based Live Linux distribution specifically crafted for library professionals. This remastered edition includes over 25 essential tools for Library and Information Science (LIS), seamlessly integrated with the Senayan Library Management System (SLiMS). Built to make Linux accessible and practical for librarians, emphasizing ease of use without requiring installation.<div class="coverage-section"><details><summary>Webpage Coverage</summary><div class="coverage-links"><ul><li><a href="https://ugos.ugm.ac.id/2010/12/29/workshop-series-pelatihan-degex-dan-instalasi-linux-bagi-%20pustakawan-dan-umum/" target="_blank">UGM Workshop Coverage</a></li><li><a href="http://ovanmulia.wordpress.com/2011/01/12/aplikasi-open-source-untuk-pustakawan/" target="_blank">Open Source Apps for Librarians</a></li><li><a href="http://desawarna.blogspot.com/2011/02/ada-linux-degex-di-perpustakaan.html" target="_blank">Degex in Libraries</a></li><li><a href="http://jogjalib.blogspot.com/2010/10/degex-linux-distribution-with-lis-apps.html" target="_blank">Jogjalib Review</a></li></ul></div></details></div>''',
+            "skills": ["GNU/Linux", "System Administration", "Library Systems"],
+            "link": "none"
+        },
+        {
+            "title": "Puppylib",
+            "url": "https://www.youtube.com/watch?v=7CBas1TRgRo",
+            "description": '''A lightweight Puppy Linux remaster was optimized for library operations. This distribution packed essential library tools, including SLiMS, into a compact, resource-efficient system that ran smoothly on older hardware. Perfect for libraries with limited computing resources, it maintained full functionality without compromising performance.<div class="coverage-section"><details><summary>Webpage Coverage</summary><div class="coverage-links"><ul><li><a href="http://puppylinux.org/main/Puplet%20for%20special%20features.htm" target="_blank">PuppyLinux.org Feature</a></li><li><a href="http://murga-linux.com/puppy/viewtopic.php?t=59919" target="_blank">Murga Linux Forum</a></li><li><a href="http://obiblio.sourceforge.net/index.php/Main/Gallery" target="_blank">OpenBiblio Gallery</a></li><li><a href="http://www.purwo.co/2009/07/puppylib-linux-livecd-rasa-perpustakaan.html" target="_blank">Purwo.co Review</a></li><li><a href="https://gadgetboi.wordpress.com/2009/09/01/distro-linux-lokal-part-2-mengenal-lebih-jauh-" target="_blank">GadgetBoi Review</a></li><li><a href="https://pkbmedukasi.wordpress.com/links/daftar-distro-linux-lokal/" target="_blank">Local Linux Distro List</a></li><li><a href="https://archive.org/browse.php?field=subject&mediatype=software&collection=linux_distributio%20ns" target="_blank">Internet Archive</a></li><li><a href="https://toko.baliwae.com/product_info.php?products_id=1632" target="_blank">Baliwae Store</a></li></ul></div></details></div>''',
+            "skills": ["GNU/Linux", "System Optimization", "System Administration", "Library Systems"],
+            "link": "none"
+        },
+        {
+            "title": "Poetica",
+            "url": "https://s.id/poettica",
+            "description": "Generate beautiful poetry inspired by legendary Indonesian poets such as Sapardi Djoko Damono, Chairil Anwar, Wiji Thukul, WS Rendra, and Sutardji Calzoum Bachri. This app also supports analysis for aesthetic analysis, hermeneutic analysis, and literature analysis.",
+            "skills": ["Python", "Streamlit", "Groq as the LLM provider"],
+            "link": "https://github.com/cyberarian/poetica"
         },
         {
             "title": "XpertChat",
@@ -108,26 +94,155 @@ def show_projects_tab():
             "description": "The KYCPy platform represents a comprehensive solution for Know Your Customer (KYC) processes in banking institutions. Our AI-powered document verification system leverages Google's Gemini AI technology to provide advanced document processing capabilities.",
             "skills": ["OCR", "Python", "Streamlit", "Gemini Flash"],
             "link": "https://github.com/cyberarian/KYCPy"
-        },{
-            "title": "OCEARIN",
-            "url": "https://ocearin.streamlit.app/",
-            "description": "OCR with Vision Language Models (VLMs). With the integration of visual and linguistic intelligence, Visual-Linguistic Models (VLMs) can interpret text in its context more accurately, better understand the structure of tables and forms, and analyze visual elements to gain deeper insights.",
-            "skills": ["OCR", "Python", "Streamlit", "gemini-2.5-flash-preview-04-17", "Mistral-OCR"],
-            "link": "https://github.com/cyberarian/ocearin"
-        }
+        }        
     ]
     
-    # Display projects in a grid
-    cols = st.columns(3)
-    for i, project in enumerate(projects):
-        with cols[i % 3]:
-            st.markdown(div_card(f'''
-            <h3>
-                <a href="{project["url"]}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 2px solid #0096c7;">
-                    {project["title"]}
-                </a>
-            </h3>
-            <p>{project["description"]}</p>
-            <p><strong>Skills:</strong> {", ".join(project["skills"])}</p>
-            {"<a href='" + project.get("link", project["url"]) + "' target='_blank' class='project-link'>" + ("View on GitHub →" if "link" in project else "Watch Demo →") + "</a>"}
-            ''', f"project-{i}"), unsafe_allow_html=True)
+    # Convert projects to DataFrame
+    df = pd.DataFrame(projects)
+    
+    # Format skills as comma-separated strings
+    df['skills'] = df['skills'].apply(lambda x: ', '.join(x))
+    
+    # Create clickable links with styling (fixed formatting)
+    df['title'] = df.apply(lambda x: 
+        f'<h3 style="margin:0"><a href="{x["url"]}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 2px solid #0096c7;">{x["title"]}</a></h3>', 
+        axis=1
+    )
+
+    # Style repository links
+    df['repository'] = df.apply(
+        lambda x: f'<a href="{x.get("link", x["url"])}" target="_blank" class="project-link" style="color: #0096c7;">{"View on GitHub →" if x.get("link") and x["link"] != "none" else "Watch Demo →" if x["link"] != "none" else ""}</a>', 
+        axis=1
+    )
+
+    # Reorder and rename columns
+    df = df[['title', 'description', 'skills', 'repository']]
+    df.columns = ['Project', 'Description', 'Technologies', 'Links']
+    
+    # Display the DataFrame with HTML
+    st.write(df.to_html(escape=False, index=False), unsafe_allow_html=True)
+    
+    # Updated CSS styling
+    st.markdown("""
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        border-radius: 5px 5px 0 0;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background-color: #5b5b5b;
+    }
+    
+    th {
+        background-color: #0096c7;
+        color: white;
+        padding: 15px;
+        text-align: left;
+        font-size: 1.1em;
+    }
+    
+    td {
+        padding: 15px;
+        border-bottom: 1px solid #dddddd;
+        vertical-align: top;
+        background-color: #111010;
+    }
+    
+    tr {
+        background-color: #111010;
+    }
+    
+
+    /* Remove alternating row colors */
+    tr:nth-child(even) {
+        background-color: #0e0e0e;
+    }
+    
+    tr:nth-child(even) td {
+        background-color: #0e0e0e;
+    }
+    
+    .project-link {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    
+    td:nth-child(3) { /* Technologies column */
+        color: #666;
+        font-size: 0.95em;
+    }
+    
+    details {
+        margin-top: 10px;
+    }
+    
+    details summary {
+        color: #0096c7;
+        cursor: pointer;
+    }
+    
+    details ul {
+        margin-top: 8px;
+        padding-left: 20px;
+    }
+    
+    td h3 {
+        white-space: nowrap;
+        line-height: 1.2;
+        padding: 0;
+    }
+    
+    td {
+        white-space: normal;
+    }
+    
+    .coverage-section {
+        margin-top: 15px;
+    }
+    
+    .coverage-section details {
+        background: #f8f9fa;
+        border-radius: 4px;
+        padding: 8px;
+        margin: 5px 0;
+    }
+    
+    .coverage-section summary {
+        color: #0096c7;
+        cursor: pointer;
+        font-weight: 500;
+        user-select: none;
+    }
+    
+    .coverage-section summary:hover {
+        color: #0077b6;
+    }
+    
+    .coverage-links {
+        padding: 10px 0 5px 0;
+    }
+    
+    .coverage-links ul {
+        list-style-type: none;
+        padding-left: 15px;
+        margin: 0;
+    }
+    
+    .coverage-links li {
+        margin: 5px 0;
+    }
+    
+    .coverage-links a {
+        color: #0096c7;
+        text-decoration: none;
+    }
+    
+    .coverage-links a:hover {
+        text-decoration: underline;
+    }
+    </style>
+    """, unsafe_allow_html=True)

@@ -50,7 +50,7 @@ def display_header():
         </div></div>
         <div>
             <h1 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 3.2em; margin-bottom: 10px; animation: fadeIn 1.5s;">Adnuri Mohamidi</h1>
-            <p style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1.5em; color: #bbbbbb; margin: 0; animation: fadeIn 2s;">Tech-savvy Librarian, Open Source Enthusiast</p>
+            <p style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1.5em; color: #bbbbbb; margin: 0; animation: fadeIn 2s;">Helping organizations thrive through smart, tech-driven information stewardship</p>
         </div>
     </div>
     ''', unsafe_allow_html=True)
