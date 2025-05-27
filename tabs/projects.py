@@ -105,7 +105,7 @@ def show_projects_tab():
     
     # Create clickable links with styling (fixed formatting)
     df['title'] = df.apply(lambda x: 
-        f'<h3 style="margin:0"><a href="{x["url"]}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 2px solid #0096c7;">{x["title"]}</a></h3>', 
+        f'<h4 style="margin:0"><a href="{x["url"]}" target="_blank" style="color: inherit; text-decoration: none; border-bottom: 2px solid #0096c7;">{x["title"]}</a></h3>', 
         axis=1
     )
 
@@ -122,127 +122,6 @@ def show_projects_tab():
     # Display the DataFrame with HTML
     st.write(df.to_html(escape=False, index=False), unsafe_allow_html=True)
     
-    # Updated CSS styling
-    st.markdown("""
-    <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 25px 0;
-        font-size: 0.9em;
-        border-radius: 5px 5px 0 0;
-        overflow: hidden;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        background-color: #5b5b5b;
-    }
-    
-    th {
-        background-color: #0096c7;
-        color: white;
-        padding: 15px;
-        text-align: left;
-        font-size: 1.1em;
-    }
-    
-    td {
-        padding: 15px;
-        border-bottom: 1px solid #dddddd;
-        vertical-align: top;
-        background-color: #111010;
-    }
-    
-    tr {
-        background-color: #111010;
-    }
-    
-
-    /* Remove alternating row colors */
-    tr:nth-child(even) {
-        background-color: #0e0e0e;
-    }
-    
-    tr:nth-child(even) td {
-        background-color: #0e0e0e;
-    }
-    
-    .project-link {
-        display: inline-block;
-        margin-top: 10px;
-        font-weight: 500;
-    }
-    
-    td:nth-child(3) { /* Technologies column */
-        color: #666;
-        font-size: 0.95em;
-    }
-    
-    details {
-        margin-top: 10px;
-    }
-    
-    details summary {
-        color: #0096c7;
-        cursor: pointer;
-    }
-    
-    details ul {
-        margin-top: 8px;
-        padding-left: 20px;
-    }
-    
-    td h3 {
-        white-space: nowrap;
-        line-height: 1.2;
-        padding: 0;
-    }
-    
-    td {
-        white-space: normal;
-    }
-    
-    .coverage-section {
-        margin-top: 15px;
-    }
-    
-    .coverage-section details {
-        background: #f8f9fa;
-        border-radius: 4px;
-        padding: 8px;
-        margin: 5px 0;
-    }
-    
-    .coverage-section summary {
-        color: #0096c7;
-        cursor: pointer;
-        font-weight: 500;
-        user-select: none;
-    }
-    
-    .coverage-section summary:hover {
-        color: #0077b6;
-    }
-    
-    .coverage-links {
-        padding: 10px 0 5px 0;
-    }
-    
-    .coverage-links ul {
-        list-style-type: none;
-        padding-left: 15px;
-        margin: 0;
-    }
-    
-    .coverage-links li {
-        margin: 5px 0;
-    }
-    
-    .coverage-links a {
-        color: #0096c7;
-        text-decoration: none;
-    }
-    
-    .coverage-links a:hover {
-        text-decoration: underline;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+    # CSS for this table is now expected to be in static/styles.css
+    # and loaded by home.py
+    pass

@@ -5,7 +5,7 @@
 }
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
 
 /* Import Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
@@ -156,4 +156,34 @@ div.element-container {
     color: #0096c7;
     width: 24px;
     display: inline-block;
+}
+
+/* Styles for project table column widths */
+table.dataframe th:nth-child(1), /* Project Header */
+table.dataframe td:nth-child(1) { /* Project Cell */
+    width: 20%;
+    min-width: 180px; /* Ensure project title has some minimum space */
+    vertical-align: top; /* Align content to the top */
+}
+
+table.dataframe th:nth-child(2), /* Description Header */
+table.dataframe td:nth-child(2) { /* Description Cell */
+    width: 45%;
+    vertical-align: top;
+}
+
+table.dataframe th:nth-child(3), /* Technologies Header */
+table.dataframe td:nth-child(3) { /* Technologies Cell */
+    width: 20%;
+    vertical-align: top;
+}
+
+table.dataframe th:nth-child(4) { /* Links Header */
+    width: 15%;
+    text-align: center; /* Center the "Links" header text */
+}
+table.dataframe td:nth-child(4) { /* Links Cell */
+    width: 15%;
+    text-align: center; /* Center the links/buttons */
+    vertical-align: middle; /* Vertically align buttons if they are of different heights */
 }
