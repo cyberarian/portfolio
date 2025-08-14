@@ -5,44 +5,51 @@ from utils import div_card
 def show_projects_tab():
     projects = [
         {
+            "title": "WaskitaHusada",
+            "url": "https://s.id/waskitahusada",
+            "description": "a medical chatbot app providing educational information and assistance. It uses Llama3-OpenBioLLM-70B designed for biomedical domain and Gemini1.5 Flash for accurate translation. Tested with MedQA dataset.",
+            "skills": ["Chatbot", "Shiny", "Gemini 1.5 Flash", "Llama3-OpenBioLLM-70B"],
+            "link": "https://github.com/cyberarian/waskita"
+        },
+        {
             "title": "IDocspy",
             "url": "https://s.id/idocspy",
             "description": "an Intelligent Document Processing and Understanding. IDocspy is expected to contribute strategically as a complementary component that enhances the functionality of EDRMS.",
-            "skills": ["OCR", "Python", "Streamlit", "gemini-2.5-flash-preview-04-17", "Mistral-OCR"],
+            "skills": ["OCR", "Streamlit", "gemini-2.5-flash-preview-04-17", "Mistral-OCR"],
             "link": "https://github.com/cyberarian/ocearin"
         },
         {
             "title": "OCEARIN",
             "url": "https://s.id/ocearin",
             "description": "OCR evaluator with Vision Language Models (VLMs). VLMs can interpret text in its context more accurately, better understand the structure of tables and forms, and analyze visual elements to gain deeper insights.",
-            "skills": ["OCR", "Python", "Streamlit", "gemini-2.5-flash-preview-04-17", "Mistral-OCR"],
+            "skills": ["OCR", "Streamlit", "gemini-2.5-flash-preview-04-17", "Mistral-OCR"],
             "link": "https://github.com/cyberarian/ocearin"
         },
         {
             "title": "Arsipy",
             "url": "https://arsipy.streamlit.app/",
             "description": "AI-powered guide to archive manuals from trusted sources",
-            "skills": ["Retrieval-Augmented Generation (RAG)", "Python", "Streamlit", "OCR", "Groq as the LLM provider", "Google Gemini 2.0 Flash"],
+            "skills": ["Retrieval-Augmented Generation (RAG)", "Streamlit", "OCR", "Groq as the LLM provider", "Google Gemini 2.0 Flash"],
             "link": "https://github.com/cyberarian/arsipy"
         },
         {
             "title": "Ask Socrates",
             "url": "https://asksocrates.streamlit.app/",
-            "description": "This app gives you the chance to engage in discussions with an AI representation of Socrates, the ancient Greek philosopher renowned for the Socratic Method—his technique of inquiry and questioning. My aim is to recreate his method, guiding you through philosophical questions and challenging your own perspectives.",
+            "description": "This app gives you the chance to engage in discussions with an AI representation of Socrates, renowned for his technique of inquiry and questioning. My aim is to recreate his method, guiding you through philosophical questions and challenging your own perspectives.",
             "skills": ["Python", "Streamlit", "Meta-Llama-3.3-70b-versatile"],
             "link": "https://github.com/cyberarian/socrates"
         },
         {
             "title": "FactChecker_ID",
             "url": "https://factcheckerid.streamlit.app/",
-            "description": "An open-source tool designed to help users verify information against reliable Wikipedia sources. My goal is to make fact-checking accessible to everyone, supporting multilingual functionality in eight languages, including Indonesian, English, Arabic, French, Spanish, Chinese, Japanese, and Russian.",
+            "description": "An open-source tool designed to help users verify information against reliable Wikipedia sources and supported by image analysis. My goal is to make fact-checking accessible to everyone, supporting multilingual functionality in eight languages.",
             "skills": ["Python", "Streamlit", "OCR", "Groq as the LLM provider", "Google Gemini 2.0 Flash"],
             "link": "https://github.com/cyberarian/factcheckid"
         },
         {
             "title": "PawangData",
             "url": "https://pawangdata.streamlit.app/",
-            "description": "a Streamlit-based tool designed for data wrangling and visualization. Aimed at data professionals and enthusiasts, this app provides a seamless interface for handling and transforming datasets, making complex data tasks more manageable. Whether you're cleaning, transforming, or visualizing data, PawangData simplifies the process with intuitive tools and customizable options.",
+            "description": "a simple tool designed for data wrangling and visualization, making complex data tasks more manageable. Whether you're cleaning, transforming, or visualizing data, PawangData simplifies the process with intuitive tools and customizable options.",
             "skills": ["Python", "Streamlit", "Pandas", "Groq as the LLM provider", "Google Gemini 2.0 Flash"],
             "link": "https://github.com/cyberarian/PawangData"
         },
