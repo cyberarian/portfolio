@@ -5,10 +5,10 @@ from utils import div_card
 def show_projects_tab():
     projects = [
         {
-            "title": "WaskitaHusada",
-            "url": "https://s.id/waskitahusada",
-            "description": "a medical chatbot app providing educational information and assistance. It uses Llama3-OpenBioLLM-70B designed for biomedical domain and Gemini1.5 Flash for accurate translation. Tested with MedQA dataset.",
-            "skills": ["Chatbot", "Shiny", "Gemini 1.5 Flash", "Llama3-OpenBioLLM-70B"],
+            "title": "Dokter Arki",
+            "url": "https://s.id/dokterarki",
+            "description": "a medical chatbot app providing educational information and assistance. It uses II-Medical-8B-1706 (previously Llama3-OpenBioLLM-70B) designed for biomedical domain and Gemini1.5 Flash for accurate translation. Tested with MedQA dataset.",
+            "skills": ["Chatbot", "Shiny", "Gemini 1.5 Flash", "II-Medical-8B-1706"],
             "link": "https://github.com/cyberarian/waskita"
         },
         {
